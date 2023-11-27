@@ -35,5 +35,6 @@ public class C01_SetupDriver {
 
         URL url = new URL("http://0.0.0.0:4723");
         AndroidDriver driver = new AndroidDriver(url, options);
+        System.out.println("günün 2. çalışması");
     }
 }
