@@ -6,26 +6,27 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import techproed.basetest.ApiDemosBaseTest;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class C03_Locators {
+public class C03_Locators extends ApiDemosBaseTest {
     @Test
     public void testLocators() throws MalformedURLException {
-        String appUrl = System.getProperty("user.dir")
-                + File.separator + "src"
-                + File.separator + "test"
-                + File.separator + "resources"
-                + File.separator + "ApiDemos-debug.apk";
+//       String appUrl = System.getProperty("user.dir")             ApiDemosBaseTest oluşturulduğu için bu bölüm iptal
+//               + File.separator + "src"
+//               + File.separator + "test"
+//               + File.separator + "resources"
+//               + File.separator + "ApiDemos-debug.apk";
 
-        UiAutomator2Options options = new UiAutomator2Options()
-                .setApp(appUrl);
+//       UiAutomator2Options options = new UiAutomator2Options()
+//               .setApp(appUrl);
 
-        URL url = new URL("http://0.0.0.0:4723");
+//       URL url = new URL("http://0.0.0.0:4723");
 
-        AndroidDriver driver = new AndroidDriver(url, options);
+ //       AndroidDriver driver = new AndroidDriver(url, options);
 
         //1.accessibilityId
         WebElement element = driver.findElement(AppiumBy.accessibilityId("Accessibility"));
